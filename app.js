@@ -1,15 +1,26 @@
-const counter = document.querySelector('.counter-data');
+const counter = document.querySelector(".counter-data");
+function valueCheck() {
+  let tmp = parseInt(counter.textContent);
 
-function increase(){
-    let tmp = parseInt(counter.textContent) ;
-    counter.innerHTML= (tmp+ 1)
+  if (tmp > 0) {
+    counter.style.color = "Green";
+  }else if (tmp<0) {
+    counter.style.color= "Red";
+  }else counter.style.color="crimson"
 }
-function decrease(){
-    let tmp = parseInt(counter.textContent) ;
-    counter.innerHTML= (tmp - 1)
+function increase() {
+  let tmp = parseInt(counter.textContent);
+  counter.innerHTML = tmp + 1;
+  valueCheck();
 }
-function reset(){
-    let tmp = parseInt(counter.textContent) ;
-    counter.innerHTML= 0
+function decrease() {
+  let tmp = parseInt(counter.textContent);
+  counter.innerHTML = tmp - 1;
+  valueCheck();
+}
+function reset() {
+  let tmp = parseInt(counter.textContent);
+  counter.innerHTML = 0;
+  valueCheck();
 }
 console.log(counter);
