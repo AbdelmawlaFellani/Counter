@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap:1em;
+}
+.counter-text{
+    font-weight: 800;
+    font-size: 64px;
+    color: crimson;
+}
+.counter-data{
+    font-weight: 700;
+    font-size: 72px;
+    color: green;
+}
+.counter-btns-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap:1.5em;
+}
+.btn{
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-color: white; */
+    border:solid 2px crimson;
+    padding:0.5rem 1rem;
+    letter-spacing: 0.25rem;
+}
